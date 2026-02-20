@@ -36,7 +36,7 @@ app.get('/', (req, res) => {
 });
 
 // Запуск сервера
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
+const PORT = process.env.PORT || 8000; // Змінили дефолтний порт на 8000
+app.listen(PORT, '0.0.0.0', () => {    // Додали '0.0.0.0'
     console.log(`Сервер працює на порту ${PORT}`);
 });
